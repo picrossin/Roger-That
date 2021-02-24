@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/VR and Computer Controller.unity
-    guid: 4f861b9dc40ed4c45ba4e23c068f2e1f
+    path: Assets/Scenes/Level.unity
+    guid: 8139452d1a9333f4793e459caa3f98c4
   m_configObjects:
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 8174eb1d38f2f1e40a90781777f9f204, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ff0a51bd56f702c40ad923687e8be574, type: 2}
