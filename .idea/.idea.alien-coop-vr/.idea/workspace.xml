@@ -22,16 +22,8 @@
     <list default="true" id="1b3e5e06-6f45-404c-ab67-7af43b32a88a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.alien-coop-vr/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.alien-coop-vr/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.alien-coop-vr/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.alien-coop-vr/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/CGY_ATM/Materials/ATM_Orange.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/CGY_ATM/Materials/ATM_Orange.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Sci_fi_Drones/Prefabs/Robot_Collector.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Sci_fi_Drones/Prefabs/Robot_Collector.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/_Creepy_Cat/_3D Scifi Kit Starter Kit/_Prefabs/_Legos/WEIRD HALF of half (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/_Creepy_Cat/_3D Scifi Kit Starter Kit/_Prefabs/_Legos/WEIRD HALF of half (1).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Robot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Robot.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Robot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Robot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +34,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/KeyLightManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StartSecondTerminal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StartFirstTerminal.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -54,6 +47,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/StartFirstTerminal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Robot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StartSecondTerminal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/KeyLightManager.cs" />
       </list>
     </option>
   </component>
@@ -98,7 +92,7 @@
       <updated>1614180931236</updated>
       <workItem from="1614180939533" duration="3245000" />
       <workItem from="1614318466432" duration="412000" />
-      <workItem from="1614321010189" duration="2212000" />
+      <workItem from="1614321010189" duration="7431000" />
     </task>
     <servers />
   </component>

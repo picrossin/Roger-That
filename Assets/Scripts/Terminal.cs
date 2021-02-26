@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Terminal : MonoBehaviour
 {
+    [SerializeField] private KeyLightManager keyLightManager;
+    
     public delegate void ActivateAction();
     public event ActivateAction OnActivated;
     
@@ -27,5 +29,7 @@ public class Terminal : MonoBehaviour
 
         renderer.material.EnableKeyword("_EMISSION");
         renderer.material.SetTexture("_EmissionMap", onEmissionMap);
+        
+        keyLightManager.AddTerminal();
     }
 }

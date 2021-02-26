@@ -42,6 +42,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="GameQuitter.cs" t="Include" />
+          <e p="KeyLightManager.cs" t="Include" />
           <e p="MapObject.cs" t="Include" />
           <e p="Robot.cs" t="Include" />
           <e p="StartFirstTerminal.cs" t="Include" />
