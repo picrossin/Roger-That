@@ -55,15 +55,6 @@ public class Robot : MonoBehaviour
         _agent.SetDestination(_currentTarget.position);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.transform.CompareTag(playerTag))
-        {
-            Destroy(player.gameObject);
-            sceneLoader.SetActive(true);
-        }
-    }
-
     private void SetObjectiveToFollow(int objectiveNumber)
     {
         if (objectiveNumber == 1)
@@ -117,7 +108,8 @@ public class Robot : MonoBehaviour
                         _objectiveMemory = _objectiveToTarget;
                         _caughtPlayer = false;
                         _chasingPlayer = true;
-                        _audioSource.Play();
+                        if (!_audioSource.isPlaying)
+                            _audioSource.Play();
                     }
                 }
                 else
@@ -140,6 +132,9 @@ public class Robot : MonoBehaviour
         {
             _chasingPlayer = false;
             _caughtPlayer = true;
+            
+            Destroy(player.gameObject);
+            sceneLoader.SetActive(true);
         }
     }
 }
