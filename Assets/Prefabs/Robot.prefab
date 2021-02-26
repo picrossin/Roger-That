@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &7101278946694975234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7100730911699308479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d083e5699f76b346909565a8c8fe0a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  minimap: {fileID: 0}
+  canvas: {fileID: 0}
+  scale: 0.15
+  color: {r: 1, g: 0, b: 0, a: 1}
+  xOffset: 68
+  zOffset: 74
+  mapLength: 130
+--- !u!114 &7101278946694975260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7100730911699308479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662f25f8fc640bf4db281c550c970147, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  objective1: {fileID: 7101278945153922452}
+  objective2: {fileID: 7101278946542781959}
+  objectiveCollisionDistance: 1
+  viewDistance: 40
+  coneOfVisionAngle: 35
+  chaseDistance: 20
+  playerTag: Player
+--- !u!195 &7101278946694975261
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7100730911699308479}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.51466906
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.5
+  m_BaseOffset: -0.4
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &7101278945153922451
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,68 +155,6 @@ Transform:
   m_Father: {fileID: 7101278945522990900}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7101278946694975260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7100730911699308479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 662f25f8fc640bf4db281c550c970147, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  objective1: {fileID: 7101278945153922452}
-  objective2: {fileID: 7101278946542781959}
-  objectiveCollisionDistance: 1
-  viewDistance: 40
-  coneOfVisionAngle: 35
-  chaseDistance: 20
-  playerTag: Player
---- !u!195 &7101278946694975261
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7100730911699308479}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.51466906
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1.5
-  m_BaseOffset: -0.4
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &7101278946694975234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7100730911699308479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d083e5699f76b346909565a8c8fe0a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  minimap: {fileID: 0}
-  canvas: {fileID: 0}
-  scale: 0.15
-  color: {r: 1, g: 0, b: 0, a: 1}
-  xOffset: 68
-  zOffset: 74
-  mapLength: 130
 --- !u!1001 &7101278945910371553
 PrefabInstance:
   m_ObjectHideFlags: 0

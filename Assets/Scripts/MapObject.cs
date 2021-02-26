@@ -34,27 +34,36 @@ public class MapObject : MonoBehaviour
 
     private void Update()
     {
-        Vector3 currentObjectPosition = transform.position;
+        if (minimap.gameObject.activeSelf)
+        {
+            _newSprite.SetActive(true);
+            
+            Vector3 currentObjectPosition = transform.position;
 
-        // normalize the position of the object in the map to be between 0 and 1        
-        Vector2 normalizedObjectPosition = new Vector2(
-            (currentObjectPosition.x + xOffset) / mapLength,
-            (currentObjectPosition.z + zOffset) / mapLength);
+            // normalize the position of the object in the map to be between 0 and 1        
+            Vector2 normalizedObjectPosition = new Vector2(
+                (currentObjectPosition.x + xOffset) / mapLength,
+                (currentObjectPosition.z + zOffset) / mapLength);
         
-        // get the coordinates of the 4 corners of the rect transform
-        Vector3[] corners = new Vector3[4];
-        minimap.GetWorldCorners(corners);
+            // get the coordinates of the 4 corners of the rect transform
+            Vector3[] corners = new Vector3[4];
+            minimap.GetWorldCorners(corners);
 
-        float rectWidth = corners[3].x - corners[0].x; // width = bottom right corner x - bottom left corner x
+            float rectWidth = corners[3].x - corners[0].x; // width = bottom right corner x - bottom left corner x
 
-        // calculate position in minimap by
-        // multiplying normalized object position * the map size + the bottom left corner
-        _spriteRectTransform.position = new Vector3(
-            corners[2].x - normalizedObjectPosition.x * rectWidth,
-            corners[2].y - normalizedObjectPosition.y * rectWidth,
-            0);
+            // calculate position in minimap by
+            // multiplying normalized object position * the map size + the bottom left corner
+            _spriteRectTransform.position = new Vector3(
+                corners[2].x - normalizedObjectPosition.x * rectWidth,
+                corners[2].y - normalizedObjectPosition.y * rectWidth,
+                0);
 
-        _spriteRectTransform.localScale = Vector2.one * scale;
-        _newImage.color = color;
+            _spriteRectTransform.localScale = Vector2.one * scale;
+            _newImage.color = color;
+        }
+        else
+        {
+            _newSprite.SetActive(false);
+        }
     }
 }

@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class Robot : MonoBehaviour
 {
@@ -49,6 +51,12 @@ public class Robot : MonoBehaviour
         }
         
         _agent.SetDestination(_currentTarget.position);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.CompareTag(playerTag))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void SetObjectiveToFollow(int objectiveNumber)

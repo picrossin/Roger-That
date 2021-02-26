@@ -22,9 +22,32 @@
             <e p="Read me.txt" t="Include" />
           </e>
         </e>
+        <e p="NavMeshComponents" t="Include">
+          <e p="Editor" t="Include">
+            <e p="NavMeshAssetManager.cs" t="Include" />
+            <e p="NavMeshComponentsEditor.asmdef" t="Include" />
+            <e p="NavMeshComponentsGUIUtility.cs" t="Include" />
+            <e p="NavMeshLinkEditor.cs" t="Include" />
+            <e p="NavMeshModifierEditor.cs" t="Include" />
+            <e p="NavMeshModifierVolumeEditor.cs" t="Include" />
+            <e p="NavMeshSurfaceEditor.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="NavMeshComponents.asmdef" t="Include" />
+            <e p="NavMeshLink.cs" t="Include" />
+            <e p="NavMeshModifier.cs" t="Include" />
+            <e p="NavMeshModifierVolume.cs" t="Include" />
+            <e p="NavMeshSurface.cs" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="GameQuitter.cs" t="Include" />
           <e p="MapObject.cs" t="Include" />
+          <e p="Robot.cs" t="Include" />
+          <e p="StartFirstTerminal.cs" t="Include" />
+          <e p="StartSecondTerminal.cs" t="Include" />
+          <e p="Terminal.cs" t="Include" />
+          <e p="VREnable.cs" t="Include" />
         </e>
         <e p="SteamVR" t="Include">
           <e p="Editor" t="Include">
@@ -329,6 +352,8 @@
           <e p="SteamVR_Input_Initialization.cs" t="Include" />
         </e>
       </e>
+      <e p="NavMeshComponents.csproj" t="IncludeRecursive" />
+      <e p="NavMeshComponentsEditor.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="SteamVR.csproj" t="IncludeRecursive" />
