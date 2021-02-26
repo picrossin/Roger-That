@@ -5766,7 +5766,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 23000012521539462, guid: 40ac3af1a5cdec948893235580e5aba6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e5089908cb86887459f5c7e737e6db29, type: 2}
+    m_RemovedComponents:
+    - {fileID: 64000014095782574, guid: 40ac3af1a5cdec948893235580e5aba6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 40ac3af1a5cdec948893235580e5aba6, type: 3}
 --- !u!4 &1017745473 stripped
 Transform:
@@ -8820,6 +8825,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1000014280859804, guid: 40ac3af1a5cdec948893235580e5aba6, type: 3}
   m_PrefabInstance: {fileID: 1017745472}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1547351625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547351624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb60a350e435b348be8cf679168538c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTag: Player
+  onEmissionMap: {fileID: 2800000, guid: 39c2e50314e1f7a4d8c9a5cf98dd9755, type: 3}
 --- !u!114 &1547351628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8840,6 +8859,19 @@ MonoBehaviour:
   xOffset: 68
   zOffset: 74
   mapLength: 130
+--- !u!65 &1547351629
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547351624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.7026291, z: 0.7746239}
+  m_Center: {x: 0, y: 1.3345101, z: 0.14855957}
 --- !u!1001 &1550699100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10037,6 +10069,22 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 109154, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 109154, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 135526, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 135526, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}

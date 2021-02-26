@@ -44,13 +44,11 @@ public class Robot : MonoBehaviour
             CheckForObjective(_currentTarget);
             if (_currentTarget == player)
             {
-                Debug.Log("I forgot what i was chasing. whoops");
                 SetObjectiveToFollow(_objectiveMemory);
             }
         }
         
         _agent.SetDestination(_currentTarget.position);
-        Debug.Log($"Beep boop. Chasing {_currentTarget.gameObject.name}. fizz buzz!");
     }
 
     private void SetObjectiveToFollow(int objectiveNumber)
