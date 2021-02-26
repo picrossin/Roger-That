@@ -15,6 +15,7 @@ public class Robot : MonoBehaviour
     [SerializeField] private string playerTag = "Player";
 
     private NavMeshAgent _agent;
+    private AudioSource _audioSource;
     private Transform _currentTarget;
     private int _objectiveToTarget = 2;
     private int _objectiveMemory;
@@ -24,6 +25,7 @@ public class Robot : MonoBehaviour
     private void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
+        _audioSource = GetComponent<AudioSource>();
         SetObjectiveToFollow(2); // follow objective 2 by default
         _objectiveMemory = _objectiveToTarget;
     }
@@ -112,10 +114,12 @@ public class Robot : MonoBehaviour
                         _objectiveMemory = _objectiveToTarget;
                         _caughtPlayer = false;
                         _chasingPlayer = true;
+                        _audioSource.Play();
                     }
                 }
                 else
                 {
+                    _audioSource.Stop();
                     _chasingPlayer = false;
                     _caughtPlayer = false;
                 }

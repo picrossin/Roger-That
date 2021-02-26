@@ -23,7 +23,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.alien-coop-vr/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.alien-coop-vr/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.alien-coop-vr/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.alien-coop-vr/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Robot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Robot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartFirstTerminal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartFirstTerminal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartSecondTerminal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartSecondTerminal.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,18 +38,20 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/KeyLightManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StartSecondTerminal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DeleteAfterSeconds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StartFirstTerminal.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VREnable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MapObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StartFirstTerminal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Robot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StartSecondTerminal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/KeyLightManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DeleteAfterSeconds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Robot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StartFirstTerminal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StartSecondTerminal.cs" />
       </list>
     </option>
   </component>
@@ -92,7 +96,7 @@
       <updated>1614180931236</updated>
       <workItem from="1614180939533" duration="3245000" />
       <workItem from="1614318466432" duration="412000" />
-      <workItem from="1614321010189" duration="7431000" />
+      <workItem from="1614321010189" duration="10033000" />
     </task>
     <servers />
   </component>

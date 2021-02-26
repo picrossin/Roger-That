@@ -4,6 +4,7 @@ using UnityEngine;
 public class StartSecondTerminal : MonoBehaviour
 {
     [SerializeField] private GameObject secondRobot;
+    [SerializeField] private GameObject sound;
     
     private Terminal _terminal;
     
@@ -21,5 +22,6 @@ public class StartSecondTerminal : MonoBehaviour
     private void ActivateRoom()
     {
         secondRobot.SetActive(true);
+        Instantiate(sound, transform.position, Quaternion.identity);
     }
 }

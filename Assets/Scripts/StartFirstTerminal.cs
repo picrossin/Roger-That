@@ -8,6 +8,8 @@ public class StartFirstTerminal : MonoBehaviour
     [SerializeField] private GameObject door;
     [SerializeField] private GameObject firstRobot;
     [SerializeField] private GameObject minimap;
+    [SerializeField] private GameObject terminalOnAudio;
+    [SerializeField] private GameObject instructionsAudio;
     
     private Terminal _terminal;
     
@@ -32,7 +34,10 @@ public class StartFirstTerminal : MonoBehaviour
 
     private IEnumerator EnableRobot()
     {
+        Instantiate(terminalOnAudio, transform.position, Quaternion.identity);
         yield return new WaitForSeconds(6f);
         firstRobot.SetActive(true);
+        yield return new WaitForSeconds(6f);
+        Instantiate(instructionsAudio, transform.position, Quaternion.identity);
     }
 }
