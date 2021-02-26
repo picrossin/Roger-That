@@ -37,7 +37,6 @@ public class StartFirstTerminal : MonoBehaviour
         Instantiate(terminalOnAudio, transform.position, Quaternion.identity);
         yield return new WaitForSeconds(6f);
         firstRobot.SetActive(true);
-        yield return new WaitForSeconds(6f);
         Instantiate(instructionsAudio, transform.position, Quaternion.identity);
     }
 }

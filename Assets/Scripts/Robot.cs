@@ -11,8 +11,8 @@ public class Robot : MonoBehaviour
     [SerializeField] private float objectiveCollisionDistance = 1f;
     [SerializeField] private float viewDistance = 40f;
     [SerializeField] private float coneOfVisionAngle = 20f;
-    [SerializeField] private float chaseDistance = 20f;
     [SerializeField] private string playerTag = "Player";
+    [SerializeField] private GameObject sceneLoader;
 
     private NavMeshAgent _agent;
     private AudioSource _audioSource;
@@ -58,7 +58,10 @@ public class Robot : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.CompareTag(playerTag))
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        {
+            Destroy(player.gameObject);
+            sceneLoader.SetActive(true);
+        }
     }
 
     private void SetObjectiveToFollow(int objectiveNumber)
